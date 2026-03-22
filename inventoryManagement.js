@@ -9,10 +9,16 @@ const logFirstProduct = () => {
   return firstProduct
 }
 
+// Function for adding new items to the array
+const addProduct = (productName) => {
+  products.push(productName)
+  console.log(products);
+}
+
 // Function to update an item in the array 
 const updateProductName = (index, name) => {
-  // products.splice(index, 1, name)
-  products[index] = name
+  products.splice(index, 1, name)
+  // products[index] = name
   console.log(products)
 }
 
@@ -23,8 +29,8 @@ const removeLastProduct = () => {
 }
 
 logFirstProduct()
-// updateProductName(0, "Table")
-removeLastProduct()
+updateProductName(-1, "Tablet")
+// removeLastProduct()
 
 
 // Export the necessary parts for testing
