@@ -16,8 +16,15 @@ const updateProductName = (index, name) => {
   console.log(products)
 }
 
+// Function to remove the last product from the array
+const removeLastProduct = () => {
+  products.pop()
+  console.log(products);
+}
+
 logFirstProduct()
-updateProductName(0, "Table")
+// updateProductName(0, "Table")
+removeLastProduct()
 
 
 // Export the necessary parts for testing
